@@ -1,0 +1,26 @@
+[
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "category_name": "Сладости",
+      "category_description": "Сахар без ЗОЖ"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+      "category_name": "Выпечка",
+      "category_description": "WeightFreeze"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 4,
+    "fields": {
+      "category_name": "Десерты",
+      "category_description": "Sugar&Free"
+    }
+  }
+  ]

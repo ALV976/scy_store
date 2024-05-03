@@ -1,0 +1,54 @@
+[
+  {
+    "model": "catalog.products",
+    "pk": 2,
+    "fields": {
+      "product_name": "Шоколад",
+      "product_description": "Классический горький",
+      "product_preview": "",
+      "product_category": 2,
+      "product_price": 120,
+      "created_at": "2024-05-02",
+      "updated_at": "2024-05-02"
+    }
+  },
+  {
+    "model": "catalog.products",
+    "pk": 3,
+    "fields": {
+      "product_name": "Ватрушка",
+      "product_description": "С творогом и повидлом",
+      "product_preview": "",
+      "product_category": 3,
+      "product_price": 80,
+      "created_at": "2024-05-02",
+      "updated_at": "2024-05-02"
+    }
+  },
+  {
+    "model": "catalog.products",
+    "pk": 4,
+    "fields": {
+      "product_name": "Кекс",
+      "product_description": "Гевюрцтраминер",
+      "product_preview": "",
+      "product_category": 3,
+      "product_price": 350,
+      "created_at": "2024-05-02",
+      "updated_at": "2024-05-02"
+    }
+  },
+  {
+    "model": "catalog.products",
+    "pk": 5,
+    "fields": {
+      "product_name": "Желе вишневое",
+      "product_description": "Дрожит при нажатии ложкой",
+      "product_preview": "",
+      "product_category": 4,
+      "product_price": 250,
+      "created_at": "2024-05-02",
+      "updated_at": "2024-05-02"
+    }
+  }
+]
