@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Category(models.Model):
     category_name = models.CharField(
         max_length=50,
@@ -19,6 +20,7 @@ class Category(models.Model):
 
     def __str__(self):
         return self.category_name
+
 
 # Create your models here.
 class Products(models.Model):
@@ -41,14 +43,17 @@ class Products(models.Model):
     )
     product_category = models.ForeignKey(
         Category,
-        on_delete=models.SET_NULL, verbose_name="Категория", null=True, blank=True, related_name='categories',
+        on_delete=models.SET_NULL,
+        verbose_name="Категория",
+        null=True,
+        blank=True,
+        related_name="categories",
     )
     product_price = models.IntegerField(
         verbose_name="Цена за покупку", blank=False, null=False
     )
     created_at = models.DateField(verbose_name="Дата начальной записи")
     updated_at = models.DateField(verbose_name="Дата последней записи")
-
 
     class Meta:
         verbose_name = "Продукт"
@@ -63,6 +68,3 @@ class Products(models.Model):
 
     def __str__(self):
         return self.product_name
-
-
-
