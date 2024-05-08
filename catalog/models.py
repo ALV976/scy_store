@@ -35,7 +35,7 @@ class Products(models.Model):
         help_text="Введите описание продукта",
     )
     product_preview = models.ImageField(
-        upload_to="products/image",
+        upload_to="catalog/image",
         blank=True,
         null=True,
         verbose_name="Превью",
@@ -68,3 +68,12 @@ class Products(models.Model):
 
     def __str__(self):
         return self.product_name
+
+    #
+
+    def str(self):
+        return f'{self.title}'
+
+    class Meta:
+        verbose_name = 'Продукт'
+        verbose_name_plural = 'Продукты'
